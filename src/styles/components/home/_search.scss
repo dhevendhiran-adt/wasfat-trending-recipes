@@ -1,5 +1,4 @@
 .search-container {
-    font-size: $title-font;
     height : 15vh; 
     display: flex;
     justify-content: center;
@@ -7,6 +6,7 @@
 }
 
 .searchbox-container {
+    //  font-size: 1vw;
      height: 4vh;
-     width: 16vw;
+     width: 26vw;
 }
