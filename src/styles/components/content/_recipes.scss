@@ -1,0 +1,15 @@
+.recipes-container {
+    height : 80vh;
+}
+
+.recipesinner-container {
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}

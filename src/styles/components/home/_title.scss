@@ -1,4 +1,12 @@
 .title-container {
-    background-color: $theme-color;
     font-size: $title-font;
+    height : 15vh; 
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    color: $white;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px red;
+    background-size: contain;
+    flex-direction: column;
 }

@@ -1,0 +1,31 @@
+.cardview-container{
+  transition: 0.3s;
+   &:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   border-radius: 8px;
+   border-style: double;
+   border-color: gray;
+   margin: 1vh 1vh;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.cardimg-container{
+    height: 25vh;
+    width: 25vh;
+}
+.cardinfo-container {
+    height:10vh;
+    width:25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-style{
+  margin: 1vh;
+}
