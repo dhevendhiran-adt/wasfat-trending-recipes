@@ -6,6 +6,7 @@ function Search() {
             <input
             className='searchbox-container'
             placeholder='Search Recipes!'
+            // type= 'search'
             >
             </input>
         </div>

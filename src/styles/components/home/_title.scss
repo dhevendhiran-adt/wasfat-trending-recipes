@@ -11,3 +11,9 @@
     background-size: contain;
     flex-direction: column;
 }
+
+@media screen and (max-width: 800px) {
+    .title-container {
+      font-size: 7vw;
+    }
+  }
