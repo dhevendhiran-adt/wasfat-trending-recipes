@@ -1,6 +1,19 @@
 .home-container{
-    height: 40vh;
+    height: 30vh;
     background-image: url("../../../assets/images/bannerimage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
+@media screen and (max-width: 1200px) {
+    .home-container {
+        height: 25vh;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .home-container {
+        height: 20vh;
+    }
+  }

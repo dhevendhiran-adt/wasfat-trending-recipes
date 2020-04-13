@@ -17,22 +17,21 @@ import image15 from '../../assets/images/image15.jpeg'
 import Recipeview from './recipes';
 
 
-
-class Content extends Component{
-    constructor(){
+class Content extends Component {
+    constructor() {
         super()
         this.state = {
-            recipes:[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15,
-                image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15]
+            recipes: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15,
+                image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15]
         }
     }
 
-    
 
-    render(){
-        return(
+
+    render() {
+        return (
             <div>
-                <Recipeview recipes = {this.state.recipes}/>
+                <Recipeview recipes={this.state.recipes} />
             </div>
         );
     }
