@@ -53,14 +53,14 @@ img {
 .cards__item {
   display: flex;
   padding: 1rem;
-  @media(min-width: 25rem) {
+  @media(min-width: 30rem) {
     width: 45%;
   }
   @media(min-width: 40rem) {
     width: 30%;
   }
-  @media(min-width: 65rem) {
-    width: 18%;
+  @media(min-width: 70rem) {
+    width: 20%;
   }
 }
 

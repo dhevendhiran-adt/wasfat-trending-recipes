@@ -21,16 +21,68 @@ class Content extends Component {
     constructor() {
         super()
         this.state = {
-            recipes: [image1, image2,image6,image11, image12, image7, image8, image9, image3, image4, image5,image10,image13, image14, image15]
+            // recipes: [image1, image2, image6, image11, image12, image7, image8, image9, image3, image4], 
+                // sample:[ image5, image10, image13, image14, image15],
+                recipes:[],
+                fileStorageUrl:""
         }
+        this.loadMore = this.loadMore.bind(this);
     }
 
+    componentDidMount() {
+        this.fetchTrendingData();
+    }
 
+    componentWillUnmount() {
+      }
+      
+
+    fetchTrendingData() {
+        var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+        var url = "https://11911stvyb.execute-api.ap-south-1.amazonaws.com/Dev/get-trending-search-page-data/v2"
+        var data = {
+            type: "top_recipes",
+            member_id: "wasfat",
+            search_after: []
+        }
+        fetch(proxyUrl+url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        })
+            .then(res => res.json())
+            .then(response => this.handleSuccessResponse(response))
+            .catch(error => this.handleError(error));
+    }
+
+    handleSuccessResponse(response) {
+        var data = JSON.parse(response.data);
+        console.log("RESPONSE", response);
+            this.state.recipes.push(...this.state.recipes,...data)
+        this.setState({})
+        console.log("Recipes Data",this.state.recipes)
+    }
+
+    handleError(error) {
+        console.log("ERROR", error)
+    }
+
+    loadMore(){
+        console.log("CLICKED!!!!")
+        // this.state.recipes.push(...this.state.sample)
+        // this.setState({})
+        // console.log(this.state.recipes)
+    }
 
     render() {
         return (
             <div>
                 <Recipeview recipes={this.state.recipes} />
+                <div className="buttonView">
+                <button className="button" onClick={this.loadMore}>Show More</button>
+                </div>
             </div>
         );
     }
