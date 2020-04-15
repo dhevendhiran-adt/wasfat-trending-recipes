@@ -5,6 +5,11 @@
     background-size: cover;
     background-position: center;
     margin: 0rem;
+    filter: contrast(90%);
+    &:hover {  
+          filter: contrast(100%);
+      }
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
 }
 
 @media screen and (max-width: 1200px) {

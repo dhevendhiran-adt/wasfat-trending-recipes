@@ -41,12 +41,10 @@
 }
 
 img {
-  height: auto;
+  height: 30rem;
   max-width: 100%;
-  min-height:15rem;
-  max-height: 30rem;
   vertical-align: middle;
-  filter: contrast(80%);
+  filter: contrast(90%);
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
@@ -61,7 +59,7 @@ img {
   @media(min-width: 40rem) {
     width: 30%;
   }
-  @media(min-width: 56rem) {
+  @media(min-width: 65rem) {
     width: 18%;
   }
 }
@@ -77,7 +75,7 @@ img {
   overflow: hidden;
   &:hover {
     .img {
-      filter: contrast(100%);
+      filter: contrast(110%);
     }
   }
 }
