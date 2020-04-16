@@ -5,9 +5,9 @@
     background-size: cover;
     background-position: center;
     margin: 0rem;
-    filter: contrast(90%);
+    filter: contrast(100%);
     &:hover {  
-          filter: contrast(100%);
+          filter: contrast(110%);
       }
     transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
 }

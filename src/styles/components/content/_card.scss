@@ -41,10 +41,11 @@
 }
 
 img {
-  height: 30rem;
+  min-height: 30rem;
+  max-height: 30rem;
   max-width: 100%;
   vertical-align: middle;
-  filter: contrast(90%);
+  filter: contrast(100%);
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
@@ -73,6 +74,7 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  cursor: pointer;
   &:hover {
     .img {
       filter: contrast(110%);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './card';
-const Recipeview = ({recipes})  => {
+const Recipeview = ({recipes, recipeClick})  => {
     // var recipesStyle;
     // if(recipes.length < 4)
     //     recipesStyle = "recipesinner-container-flex-start"
@@ -14,6 +14,7 @@ const Recipeview = ({recipes})  => {
                         return(
                             <Card 
                             val = {recipes[i]}
+                            recipeClick = {recipeClick}
                             />
                         );
                     })
