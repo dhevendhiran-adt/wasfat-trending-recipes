@@ -22,11 +22,10 @@ class Content extends Component {
         super()
         this.state = {
             // recipes: [image1, image2, image6, image11, image12, image7, image8, image9, image3, image4], 
-                // sample:[ image5, image10, image13, image14, image15],
                 recipes:[],
                 fileStorageUrl:""
         }
-        this.loadMore = this.loadMore.bind(this);
+        // this.loadMore = this.loadMore.bind(this);
     }
 
     componentDidMount() {
@@ -69,20 +68,20 @@ class Content extends Component {
         console.log("ERROR", error)
     }
 
-    loadMore(){
-        console.log("CLICKED!!!!")
-        // this.state.recipes.push(...this.state.sample)
-        // this.setState({})
-        // console.log(this.state.recipes)
-    }
+    // loadMore(){
+    //     console.log("CLICKED!!!!")
+    //     this.state.recipes.push(...this.state.sample)
+    //     this.setState({})
+    //     console.log(this.state.recipes)
+    // }
 
     render() {
         return (
             <div>
                 <Recipeview recipes={this.state.recipes} />
-                <div className="buttonView">
+                {/* <div className="buttonView">
                 <button className="button" onClick={this.loadMore}>Show More</button>
-                </div>
+                </div> */}
             </div>
         );
     }
