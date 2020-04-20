@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import image1 from '../../assets/images/image1.jpeg'
-// import image2 from '../../assets/images/image2.jpeg'
-// import image3 from '../../assets/images/image3.jpeg'
-// import image4 from '../../assets/images/image4.jpeg'
-// import image5 from '../../assets/images/image5.jpeg'
-// import image6 from '../../assets/images/image6.jpeg'
-// import image7 from '../../assets/images/image7.jpeg'
-// import image8 from '../../assets/images/image8.jpeg'
-// import image9 from '../../assets/images/image9.jpeg'
-// import image10 from '../../assets/images/image10.jpeg'
 import appstore from '../../assets/images/appstore.png'
 import playstore from '../../assets/images/playstore.png'
 import wasfat from '../../assets/images/wasfat.png'
@@ -22,7 +12,6 @@ class Content extends Component {
     constructor() {
         super()
         this.state = {
-            // recipes: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10],
             recipes: [],
             fileStorageUrl: "",
             open: false,
@@ -44,14 +33,14 @@ class Content extends Component {
         this.setState({
             loading: true
         })
-        var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+        // var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
         var url = "https://11911stvyb.execute-api.ap-south-1.amazonaws.com/Dev/get-trending-search-page-data/v2"
         var data = {
             type: "top_recipes",
             member_id: "wasfat",
             search_after: []
         }
-        fetch(proxyUrl + url, {
+        fetch( url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

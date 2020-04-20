@@ -17,9 +17,13 @@
         height: 25vh;
     }
   }
-
-@media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) {
     .home-container {
         height: 20vh;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .home-container {
+        height: 15vh;
     }
   }
