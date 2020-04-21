@@ -27,7 +27,7 @@ const Card = (props) => {
                 <div className="card__content">
                     <div className="likeView">
                     <div className="card__title">{val.title}</div>
-                        <img src={like} className="like" alt="Recipe Image" />
+                        <img src={like} className="like" alt="Like Image" />
                         <div className="likenum">{val.likes_count}</div>
                     </div>
                     <p className="card__text">{val.description}</p>

@@ -7,6 +7,18 @@ import Recipeview from './recipes';
 import Modal from 'react-modal';
 import ReactLoading from 'react-loading';
 
+// const customStyles = {
+//     content : {
+//         display:"flex",
+//         justifyContent:"center",
+//         alignItems:"center",
+//         maxHeight: "80rem",
+//         maxWidth: "90rem",
+//         marginLeft:"auto",
+//         marginRight:"auto",
+//         // backgroundColor : "red"
+//     }
+//   };
 
 class Content extends Component {
     constructor() {
