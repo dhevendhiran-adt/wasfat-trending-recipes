@@ -12,8 +12,9 @@ import ReactLoading from 'react-loading';
 //         display:"flex",
 //         justifyContent:"center",
 //         alignItems:"center",
-//         maxHeight: "80rem",
-//         maxWidth: "90rem",
+//         maxHeight: "120vh",
+//         minHeight:"40vh",
+//         maxWidth: "60vw",
 //         marginLeft:"auto",
 //         marginRight:"auto",
 //         // backgroundColor : "red"
@@ -35,6 +36,7 @@ class Content extends Component {
 
     componentDidMount() {
         this.fetchTrendingData();
+        Modal.setAppElement('body');
     }
 
     componentWillUnmount() {
@@ -45,14 +47,15 @@ class Content extends Component {
         this.setState({
             loading: true
         })
-        // var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
-        var url = "https://11911stvyb.execute-api.ap-south-1.amazonaws.com/Dev/get-trending-search-page-data/v2"
+        var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+        // var url = "https://11911stvyb.execute-api.ap-south-1.amazonaws.com/dev/get-trending-search-page-data/v3"
+        var url = "https://h3ben6xhoi.execute-api.me-south-1.amazonaws.com/prod/search-management/get-trending-search-page-data/v3"
         var data = {
             type: "top_recipes",
             member_id: "wasfat",
             search_after: []
         }
-        fetch( url, {
+        fetch( proxyUrl + url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -67,7 +70,7 @@ class Content extends Component {
     handleSuccessResponse(response) {
         this.setState({loading:false})
         var data = JSON.parse(response.data);
-        console.log("RESPONSE", response);
+        console.log("RESPONSE", data);
         this.state.recipes.push(...this.state.recipes, ...data)
         this.setState({})
     }

@@ -5,13 +5,15 @@ import like from '../../assets/images/like.png'
 
 const Card = (props) => {
     const { val, recipeClick } = props;
-    var url = "https://s3.ap-south-1.amazonaws.com"
+    // var url = "https://s3.ap-south-1.amazonaws.com"
+    var url = "https://s3.me-south-1.amazonaws.com"
     var imageUrl = ""
     if (val.media.images.length !== 0) {
         imageUrl = url + '/' + val.media.images[0]
     }
     else if (val.media.videoSnaps && val.media.videoSnaps.length != 0) {
         imageUrl = url + '/' + val.media.videoSnaps[0]
+        console.log(imageUrl)
     }
     else {
         imageUrl = defaultImage

@@ -25,3 +25,10 @@
       font-size: 5rem;
     }
   }
+
+  @media screen and (orientation:landscape) and (max-height: 500px) {
+    .title-container {
+      font-size: 6rem;
+      padding-top: 1rem;
+    }
+  }

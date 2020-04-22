@@ -79,6 +79,9 @@ img {
     .img {
       filter: contrast(110%);
     }
+    // .card__text {
+    //   overflow: scroll;
+    // }
   }
 }
 
@@ -123,14 +126,15 @@ img {
   color: gray
 }
 .card__text {
-  min-height: 4.8rem;
-  max-height: 4.8rem;
+  min-height: 4.7rem;
+  max-height: 4.7rem;
   font-size: 1rem;
   line-height: 1.5;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
   // background-color: red;
 }
 
