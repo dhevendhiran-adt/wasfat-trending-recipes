@@ -1,7 +1,6 @@
 import React from 'react';
 import defaultImage from '../../assets/images/default.jpg'
 import like from '../../assets/images/like.png'
-// import transparent from '../../assets/images/trans.png'
 
 const Card = (props) => {
     const { val, recipeClick } = props;
@@ -13,7 +12,6 @@ const Card = (props) => {
     }
     else if (val.media.videoSnaps && val.media.videoSnaps.length != 0) {
         imageUrl = url + '/' + val.media.videoSnaps[0]
-        console.log(imageUrl)
     }
     else {
         imageUrl = defaultImage
@@ -25,10 +23,23 @@ const Card = (props) => {
     return (
         <li className="cards__item">
             <div className="card" onClick={recipeClick}>
-                <img src={imageUrl} className="img" alt="Recipe Image" />
+                {/* <div style={{
+                    display : "flex",
+                    justifyContent : "center",
+                    alignItems : "center",
+                    backgroundImage: `url(${imageUrl})`,
+                    backgroundSize: "contain",
+                    backgroundRepeat: "noRepeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }} > */}
+                
+                <img src={imageUrl} className="imge" alt="Recipe Image" />
+               
+                {/* </div> */}
                 <div className="card__content">
                     <div className="likeView">
-                    <div className="card__title">{val.title}</div>
+                        <div className="card__title">{val.title}</div>
                         <img src={like} className="like" alt="Like Image" />
                         <div className="likenum">{val.likes_count}</div>
                     </div>

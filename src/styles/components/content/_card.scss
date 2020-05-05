@@ -40,10 +40,13 @@
   margin: 1vh;
 }
 
-img {
+.imge {
+  // backdrop-filter: blur(4px);
+  object-fit: cover;
   min-height: 27rem;
   max-height: 27rem;
-  max-width: 100%;
+  min-width: 27rem;
+  max-width: 27rem;
   vertical-align: middle;
   filter: contrast(100%);
   border-top-left-radius: 0.25rem;
@@ -76,7 +79,7 @@ img {
   overflow: hidden;
   cursor: pointer;
   &:hover {
-    .img {
+    .imge {
       filter: contrast(110%);
     }
     // .card__text {

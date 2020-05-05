@@ -28,7 +28,7 @@ class Content extends Component {
             recipes: [],
             fileStorageUrl: "",
             open: false,
-            loading:false
+            loading: false
         }
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -55,7 +55,7 @@ class Content extends Component {
             member_id: "wasfat",
             search_after: []
         }
-        fetch( proxyUrl + url, {
+        fetch(proxyUrl + url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -68,9 +68,9 @@ class Content extends Component {
     }
 
     handleSuccessResponse(response) {
-        this.setState({loading:false})
+        this.setState({ loading: false })
         var data = JSON.parse(response.data);
-        console.log("RESPONSE", data);
+        // console.log("RESPONSE", data);
         this.state.recipes.push(...this.state.recipes, ...data)
         this.setState({})
     }
