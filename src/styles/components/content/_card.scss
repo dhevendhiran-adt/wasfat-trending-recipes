@@ -56,8 +56,8 @@
 .cards__item {
   display: flex;
   padding: 1rem;
-  @media(min-width: 30rem) {
-    width: 45%;
+  @media(min-width: 22rem) {
+    width: 43%;
   }
   @media(min-width: 50rem) {
     width: 30%;
