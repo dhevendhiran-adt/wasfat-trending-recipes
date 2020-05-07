@@ -6,6 +6,7 @@ import wasfat from '../../assets/images/wasfat.png'
 import Recipeview from './recipes';
 import Modal from 'react-modal';
 import ReactLoading from 'react-loading';
+import close from '../../assets/images/x.png'
 
 // const customStyles = {
 //     content : {
@@ -127,7 +128,7 @@ class Content extends Component {
                                 <img src={playstore} className="imgLink" alt="Image Links" />
                             </a>
                         </div>
-                        <button onClick={this.closeModal} className="close">close</button>
+                        <img src={close} onClick={this.closeModal} className="close"/>
                     </div>
                 </Modal>
             </div>
