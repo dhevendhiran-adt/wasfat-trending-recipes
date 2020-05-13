@@ -56,13 +56,13 @@
 .cards__item {
   display: flex;
   padding: 1rem;
-  @media(min-width: 22rem) {
+  @media(min-width: 352px) { //22rem
     width: 43%;
   }
-  @media(min-width: 50rem) {
+  @media(min-width: 800px) {  //50rem
     width: 30%;
   }
-  @media(min-width: 70rem) {
+  @media(min-width: 1120px) {  //70rem
     width: 18%;
   }
 }
