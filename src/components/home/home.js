@@ -5,7 +5,7 @@ import Search from './search'
 function Home() {
     return (
         <div className='home-container'>
-            <Title />
+            {/* <Title /> */}
             {/* <Search /> */}
         </div>
     )
