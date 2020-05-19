@@ -85,11 +85,11 @@
 
   }
 
-//   @media screen and (min-height: 1000px) and (min-width: 1000px) {
-//     .ReactModal__Content{
-//         margin: 20rem;
-//     }
-// }
+  @media screen and (min-height: 1000px) and (min-width: 1000px) {
+    .ReactModal__Content{
+        margin: 20rem;
+    }
+}
 
   @media screen and (orientation:landscape) and (max-height: 500px) {
     .ReactModal__Content{
