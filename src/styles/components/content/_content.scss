@@ -13,8 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem;
-    overflow:scroll;
+    margin: 8rem;
+    overflow:scroll;   
 }
 
 .ReactModal__Overlay--after-open{
@@ -84,6 +84,13 @@
     }
 
   }
+
+//   @media screen and (min-height: 1000px) and (min-width: 1000px) {
+//     .ReactModal__Content{
+//         margin: 20rem;
+//     }
+// }
+
   @media screen and (orientation:landscape) and (max-height: 500px) {
     .ReactModal__Content{
         min-height: 40vh;

@@ -6,7 +6,7 @@
     background-color:$white;
     height: 100%;
     width: 100%;
-    overflow: scroll;
+    // overflow: scroll;
     display: inline-flex;
     flex-wrap: wrap;
     // justify-content: flex-start;
@@ -15,9 +15,9 @@
     // padding-left: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .recipesinner-container {
-        padding-left: 0rem;
+        justify-content: space-evenly;
     }
   }
 
