@@ -1,0 +1,29 @@
+.home-container{
+    height: 30vh;
+    background-image: url("../../../assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0rem;
+    filter: contrast(100%);
+    &:hover {  
+          filter: contrast(110%);
+      }
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+
+@media screen and (max-width: 1200px) {
+    .home-container {
+        height: 25vh;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .home-container {
+        height: 20vh;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .home-container {
+        height: 15vh;
+    }
+  }

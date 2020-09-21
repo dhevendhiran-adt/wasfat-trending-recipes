@@ -1,4 +1,49 @@
 .title-container {
-    background-color: $theme-color;
-    font-size: $title-font;
+    // font-size: 3vw;
+    font-size: 5rem;
+    font-family: 'Arial';
+    height : 30vh; 
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    color: $white;
+    // text-decoration: underline;
+    // text-shadow: 2px 2px 5px #B61B33;
+    background-size: contain;
+    flex-direction: column;
 }
+
+@media screen and (max-width: 1200px) {
+  .title-container {
+      height: 25vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title-container {
+      height: 20vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title-container {
+      height: 15vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .title-container {
+      font-size: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .title-container { 
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (orientation:landscape) and (max-height: 500px) {
+    .title-container {
+      font-size: 3rem;
+    }
+  }
